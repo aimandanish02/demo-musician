@@ -6,7 +6,7 @@ import { DiscographyGrid } from "@/components/discography/DiscographyGrid";
 import { TourDates } from "@/components/tour/TourDates";
 import { PhotoMarquee } from "@/components/gallery/PhotoMarquee";
 import { PressQuotes } from "@/components/press/PressQuotes";
-import { NewsletterCta } from "@/components/cta/NewsletterCta";
+import { ContactForm } from "@/components/contact/ContactForm";
 import { Footer } from "@/components/footer/Footer";
 import { SlideDeck } from "@/components/ui/SlideDeck";
 
@@ -24,7 +24,7 @@ export default function Home() {
         <LogoWall />
         <PhotoMarquee />
         <PressQuotes />
-        <NewsletterCta />
+        <ContactForm />
       </main>
       <Footer />
     </>
