@@ -60,7 +60,7 @@ async function sendContactEmail(input: {
       "api-key": apiKey,
     },
     body: JSON.stringify({
-      sender: { email: fromEmail },
+      sender: { email: fromEmail, name: "Website Contact Form" },
       to: [{ email: toEmail }],
       replyTo: { email: input.email, name: input.name },
       subject: `New contact form message from ${safeName}`,
