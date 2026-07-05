@@ -134,14 +134,15 @@ export interface StreamingPlatform {
   name: string;
   slug: string;
   url: string;
+  color: string;
 }
 
 export const streamingPlatforms: StreamingPlatform[] = [
-  { name: "Spotify", slug: "spotify", url: "#" },
-  { name: "Apple Music", slug: "applemusic", url: "#" },
-  { name: "YouTube Music", slug: "youtubemusic", url: "#" },
-  { name: "SoundCloud", slug: "soundcloud", url: "#" },
-  { name: "Bandcamp", slug: "bandcamp", url: "#" },
+  { name: "Spotify", slug: "spotify", url: "#", color: "#1DB954" },
+  { name: "Apple Music", slug: "applemusic", url: "#", color: "#FA243C" },
+  { name: "YouTube Music", slug: "youtubemusic", url: "#", color: "#FF0000" },
+  { name: "SoundCloud", slug: "soundcloud", url: "#", color: "#FF5500" },
+  { name: "Bandcamp", slug: "bandcamp", url: "#", color: "#408294" },
 ];
 
 export const stats = [

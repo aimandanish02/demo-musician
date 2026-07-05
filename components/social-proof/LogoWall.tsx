@@ -11,11 +11,12 @@ export function LogoWall() {
               key={platform.slug}
               href={platform.url}
               aria-label={platform.name}
-              className="opacity-60 grayscale transition-opacity duration-200 hover:opacity-100"
+              style={{ "--brand": platform.color } as React.CSSProperties}
+              className="grayscale opacity-60 transition-all duration-300 ease-out hover:opacity-100 hover:grayscale-0 motion-safe:hover:scale-125 motion-safe:hover:drop-shadow-[0_0_18px_var(--brand)]"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`https://cdn.simpleicons.org/${platform.slug}/f4efe4`}
+                src={`https://cdn.simpleicons.org/${platform.slug}`}
                 alt={platform.name}
                 width={112}
                 height={28}
